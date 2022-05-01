@@ -11,59 +11,71 @@
 
             <div>
                 <x-jet-label for="name" value="{{ __('Name') }}" />
-                <x-jet-input id="name" class="block mt-1 w-full" type="text" name="name" :value="old('name')" required autofocus autocomplete="name" />
+                <x-jet-input id="name" class="block mt-1 w-full" type="text" name="name" :value="old('name')" required
+                    autofocus autocomplete="name" />
             </div>
 
             <div class="mt-2">
                 <x-jet-label for="email" value="{{ __('Email') }}" />
-                <x-jet-input id="email" class="block mt-1 w-full" type="email" name="email" :value="old('email')" required />
+                <x-jet-input id="email" class="block mt-1 w-full" type="email" name="email" :value="old('email')"
+                    required />
             </div>
 
             <div class="mt-2">
                 <x-jet-label for="Phone" value="{{ __('Phone') }}" />
-                <x-jet-input id="Phone" class="block mt-1 w-full" type="Phone" name="Phone" :value="old('Phone')" required />
+                <x-jet-input id="Phone" class="block mt-1 w-full" type="text" name="Phone" :value="old('Phone')"
+                    required />
             </div>
 
             <div class="mt-2">
                 <x-jet-label for="Address" value="{{ __('Address') }}" />
-                <x-jet-input id="Address" class="block mt-1 w-full" type="Address" name="Address" :value="old('Address')" required />
+                <x-jet-input id="Address" class="block mt-1 w-full" type="text" name="Address"
+                    :value="old('Address')" required />
             </div>
 
             <div class="mt-2">
                 <x-jet-label for="UniversityName" value="{{ __('Univerity Name') }}" />
-                <x-jet-input id="UniversityName" class="block mt-1 w-full" type="UniversityName" name="UniversityName" :value="old('UniversityName')" required />
+                <x-jet-input id="UniversityName" class="block mt-1 w-full" type="text" name="UniversityName"
+                    :value="old('UniversityName')" required />
             </div>
 
             <div class="mt-2">
                 <x-jet-label for="Passyear" value="{{ __('Pass year') }}" />
-                <x-jet-input id="Passyear" class="block mt-1 w-full" type="Passyear" name="Passyear" :value="old('Passyear')" required />
+                <x-jet-input id="Passyear" class="block mt-1 w-full" type="text" name="Passyear"
+                    :value="old('Passyear')" required />
             </div>
 
             <div class="mt-2">
                 <x-jet-label for="password" value="{{ __('Password') }}" />
-                <x-jet-input id="password" class="block mt-1 w-full" type="password" name="password" required autocomplete="new-password" />
+                <x-jet-input id="password" class="block mt-1 w-full" type="password" name="password" required
+                    autocomplete="new-password" />
             </div>
 
             <div class="mt-2">
                 <x-jet-label for="password_confirmation" value="{{ __('Confirm Password') }}" />
-                <x-jet-input id="password_confirmation" class="block mt-1 w-full" type="password" name="password_confirmation" required autocomplete="new-password" />
+                <x-jet-input id="password_confirmation" class="block mt-1 w-full" type="password"
+                    name="password_confirmation" required autocomplete="new-password" />
             </div>
 
             @if (Laravel\Jetstream\Jetstream::hasTermsAndPrivacyPolicyFeature())
-                <div class="mt-4">
-                    <x-jet-label for="terms">
-                        <div class="flex items-center">
-                            <x-jet-checkbox name="terms" id="terms"/>
+            <div class="mt-4">
+                <x-jet-label for="terms">
+                    <div class="flex items-center">
+                        <x-jet-checkbox name="terms" id="terms" />
 
-                            <div class="ml-2">
-                                {!! __('I agree to the :terms_of_service and :privacy_policy', [
-                                        'terms_of_service' => '<a target="_blank" href="'.route('terms.show').'" class="underline text-sm text-gray-600 hover:text-gray-900">'.__('Terms of Service').'</a>',
-                                        'privacy_policy' => '<a target="_blank" href="'.route('policy.show').'" class="underline text-sm text-gray-600 hover:text-gray-900">'.__('Privacy Policy').'</a>',
-                                ]) !!}
-                            </div>
+                        <div class="ml-2">
+                            {!! __('I agree to the :terms_of_service and :privacy_policy', [
+                            'terms_of_service' => '<a target="_blank" href="'.route('terms.show').'"
+                                class="underline text-sm text-gray-600 hover:text-gray-900">'.__('Terms of
+                                Service').'</a>',
+                            'privacy_policy' => '<a target="_blank" href="'.route('policy.show').'"
+                                class="underline text-sm text-gray-600 hover:text-gray-900">'.__('Privacy
+                                Policy').'</a>',
+                            ]) !!}
                         </div>
-                    </x-jet-label>
-                </div>
+                    </div>
+                </x-jet-label>
+            </div>
             @endif
 
             <div class="flex items-center justify-end mt-4">

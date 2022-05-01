@@ -1,5 +1,5 @@
 <!-- featured_candidates_area_start  -->
-<div class="featured_candidates_area">
+<!-- <div class="featured_candidates_area">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
@@ -106,8 +106,8 @@
                 </div>
             </div>
         </div>
-    </div>
-    <!-- featured_candidates_area_end  -->
+    </div> -->
+    <!-- featured_candidates_area_end-->
 
     <!---top company-->
 
