@@ -86,28 +86,28 @@
         <form action="{{url('appoinment')}}" method="post">
             @csrf
             <div class="field">
-                <label for="name" class="label is-size-4 has-text-weight-light">
+                <label for="name" style="color:black;" class="label is-size-4 has-text-weight-light">
                     Name:
                 </label>
-                <input type="text" name="name" id="name" class="input" autofocus>
+                <input type="text" style="color:black;"  name="name" id="name" class="input" autofocus>
             </div>
             <div class="field">
-                <label for="email" class="label is-size-4 has-text-weight-light">
+                <label for="email" style="color:black;" class="label is-size-4 has-text-weight-light">
                     Email:
                 </label>
-                <input type="text" name="email" id="email" class="input">
+                <input type="text" style="color:black;" name="email" id="email" class="input">
             </div>
             <div class="field">
-                <label for="email" class="label is-size-4 has-text-weight-light">
+                <label for="email" style="color:black;" class="label is-size-4 has-text-weight-light">
                     Subject:
                 </label>
-                <input type="text" name="sub" class="input">
+                <input type="text" style="color:black;" name="sub" class="input">
             </div>
             <div class="field">
-                <label for="message" class="label is-size-4 has-text-weight-light">
+                <label for="message" style="color:black;" class="label is-size-4 has-text-weight-light">
                     Message:
                 </label>
-                <textarea name="msg" id="message" rows="5" class="textarea is-large"></textarea>
+                <textarea name="msg" style="color:black;" id="message" rows="5" class="textarea is-large"></textarea>
             </div>
             <button type="submit" class="btn btn-success">Submit</button>
         </form>

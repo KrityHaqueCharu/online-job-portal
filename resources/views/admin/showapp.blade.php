@@ -58,6 +58,7 @@
                         <td>{{$appoint->sub}}</td>
                         <td>{{$appoint->msg}}</td>
                         <td>{{$appoint->created_at}}</td>
+                        <td>{{$appoint->status}}</td>
                         <td><a class="btn btn-success" href="{{url('approve',$appoint->id)}}">Approve</td>
                         <td><a class="btn btn-danger" href="{{url('canceled',$appoint->id)}}">Cancel</td>
                     </tr>
